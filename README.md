@@ -18,7 +18,7 @@ input:
 ```
 output:
 ```html
-<html><head><script href="./app.js"></script><script href="./extra.js"></script></head><body>hello</body></html>
+<html><head><script src="./app.js"></script><script src="./extra.js"></script></head><body>hello</body></html>
 ```
 
 ### Gotcha:

@@ -13,7 +13,7 @@ module.exports = function(externalTags){
     var writeStream = node.createWriteStream()
     // insert external tags
     externalTags.forEach(function(tag){
-      writeStream.write(SCRIPT_START+' href="'+tag+'">'+SCRIPT_END)
+      writeStream.write(SCRIPT_START+' src="'+tag+'">'+SCRIPT_END)
     })
     // append original content of head
     readStream.pipe(writeStream)
