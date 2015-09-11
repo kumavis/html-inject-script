@@ -1,10 +1,15 @@
 var Trumpet = require('trumpet')
 
+// this is to avoid the pitfalls of having
+// a script closetag in js inlined in html
 var SCRIPT = 'script'
 var SCRIPT_START = '<'+SCRIPT
 var SCRIPT_END = '</'+SCRIPT+'>'
 
-module.exports = function(externalTags){
+module.exports = transformHtml
+
+
+function transformHtml(externalTags){
 
   var trumpet = Trumpet()
 
