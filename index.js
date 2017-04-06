@@ -8,15 +8,17 @@ var SCRIPT_END = '</'+SCRIPT+'>'
 
 module.exports = transformHtml
 
+function transformHtml(externalTags, opts){
+  console.log('opts:', opts);
+  var args = {}
+  var op = {}
 
-function transformHtml(externalTags, selector){
-  var args = {};
-  args[selector || 'head'] = {
-    _appendHtml: externalTags.map(function(tag){
-      return SCRIPT_START+' src="'+tag+'">'+SCRIPT_END;
-    }).join('')
-  }
+  op[opts.append ? '_appendHtml' : '_prependHtml'] = externalTags.map(function(tag){
+    return SCRIPT_START+' src="'+tag+'">'+SCRIPT_END;
+  }).join('')
+
+  args[opts.selector] = op
+
   return hyperstream(args);
-
 }
 
