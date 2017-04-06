@@ -13,5 +13,8 @@
   "license": "ISC",
   "dependencies": {
     "trumpet": "^1.7.1"
+  },
+  "devDependencies": {
+    "hyperstream": "^1.2.2"
   }
 }

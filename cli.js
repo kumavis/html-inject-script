@@ -15,11 +15,22 @@ if (!argv.length) {
 	printUsage()
 // stdin -> transform -> stdout
 } else {
+  var selector = null;
+  var idx = argv.indexOf('-b')
+  if (idx !== -1) {
+    argv.splice(idx, 1)
+    selector = 'body'
+  }
+
   process.stdin
-  .pipe(htmlInject(argv))
+  .pipe(htmlInject(argv, selector))
   .pipe(process.stdout)
 }
 
 function printUsage() {
-  console.log('usage: cat index.html | htmlinjectscript "app.js" > output.html')
+  console.log([
+    'usage: cat index.html | htmlinjectscript "app.js" > output.html',
+    'flags:',
+    '      -b  append to the body element'
+  ].join('\n'))
 }
