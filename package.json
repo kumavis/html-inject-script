@@ -12,9 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "hyperstream": "^1.2.2"
-  },
-  "devDependencies": {
+    "hyperstream": "^1.2.2",
     "minimist": "^1.2.0"
   }
 }
