@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "trumpet": "^1.7.1"
+    "hyperstream": "^1.2.2",
+    "minimist": "^1.2.0"
   }
 }

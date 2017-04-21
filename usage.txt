@@ -1,0 +1,11 @@
+usage: cat index.html | htmlinjectscript "app.js" > output.html
+
+Options:
+
+      --body  -b,  inject into the body element (default: head)
+
+   --selector -s,  override head or body with a specific selector
+
+     --append -a,  append to selector instead (default: prepend)
+
+          --help,  -h  display this message
