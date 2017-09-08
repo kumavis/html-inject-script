@@ -1,5 +1,7 @@
 # html-inject-script
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/kumavis/html-inject-script.svg)](https://greenkeeper.io/)
+
 Transform stream for injecting script tags into html.
 
 ### example:
