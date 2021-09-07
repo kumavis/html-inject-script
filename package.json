@@ -6,6 +6,10 @@
   "bin": {
     "htmlinjectscript": "cli.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kumavis/html-inject-script.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
